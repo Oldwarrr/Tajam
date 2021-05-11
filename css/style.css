@@ -255,7 +255,7 @@ body {
   display: block;
   font-family: 'Hammersmith One';
   width: 120px;
-  margin: 0 auto;
+  
   text-transform: uppercase;
   text-decoration: none;
 
@@ -272,6 +272,9 @@ body {
 .btn:hover {
   background-color: #ffffff;
   transition: background-color 0.6s;
+}
+.s-1 .btn{
+  margin: 0 auto;
 }
 
 
@@ -333,7 +336,51 @@ input[type="radio"] {
   .slider-controls {
     margin-top: 40px;
   }
-  .btn {
+ 
+}
 
-  }
+/*Секция 2*/
+
+.s-2__content{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0px;
+}
+
+
+.logo__main {
+  display: block;
+  max-width: 235px;
+  max-height: 229px;
+  margin: 0px 0px 0px 60px;
+}
+
+.s-2__block{
+max-width: 540px;
+}
+
+.s-2__block__title {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #413d4b;
+}
+.s-2__block__text {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  color: #817f86;
+  margin: 15px 0px 0px 0px;
+}
+.s-2 .btn{
+  margin: 35px 0px 0px 0px;
+}
+.s-2 .btn:hover {
+  color: #fff;
+  background-color: #413d4b;
+  border-color: #413d4b;
+  transition: all 0.5s;
 }
