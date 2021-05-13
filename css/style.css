@@ -272,6 +272,7 @@ body {
 .btn:hover {
   background-color: #ffffff;
   transition: background-color 0.6s;
+  border-color: #ffffff
 }
 .s-1 .btn{
   margin: 0 auto;
@@ -376,6 +377,9 @@ max-width: 540px;
   margin: 15px 0px 0px 0px;
   opacity: 0.75;
 }
+
+/*Кнопка*/
+
 .s-2 .btn{
   margin: 35px 0px 0px 0px;
   color: #413d4b;
@@ -501,7 +505,7 @@ max-width: 540px;
   color: #2f2d35;
   opacity: 0.75;
 }
-.subtitle::after{
+.s-4 .subtitle::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -600,4 +604,94 @@ max-width: 540px;
   .subtitle::after{
   left: 42%;
   }
+}
+
+/*Секция 5*/
+
+
+ /*Заголовки*/
+
+
+.s-5 {
+  max-width: 100%;
+  max-height: 100%;
+  background: url(../img/background/background-3.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 70px 0;
+}
+
+.s-5 .title, .s-5 .subtitle {
+  text-align: center;
+  color: #fff;
+}
+.s-5 .subtitle::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  
+  width: 50px;
+  height: 2px;
+  background-color: #655c80;
+}
+
+
+/*Блок с картами*/
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: 47px 0px 0px 0px; 
+}
+.cards__person {
+  box-sizing: border-box;
+  width: 23.405%;
+}
+.cards__photo {
+  background: #fff;
+  width: 220px;
+  height: 229px;
+}
+.cards__description{
+
+  padding: 19px 0px 27px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.5);;
+}
+.cards__name {
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cards__specialty {
+  font-weight: 300;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 0.7;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 0px 0px 0px;
+}
+
+/*Нижняя часть*/
+/*+*/
+/*Кнопка*/
+.s-5__text{
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-align: center;
+  margin: 70px 0px 30px 0px;
+}
+.s-5 .btn{
+  margin: 0 auto;
+  width: 140px;
 }
