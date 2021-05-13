@@ -231,7 +231,9 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 47%;
+  transform-origin: center;
+    left: 50%;
+    transform: translateX(-50%);
   width: 50px;
   height: 1px;
   background-color: #00e0d0;
@@ -509,7 +511,9 @@ max-width: 540px;
   content: "";
   position: absolute;
   bottom: 0;
-  left: 47%;
+  transform-origin: center;
+    left: 50%;
+    transform: translateX(-50%);
   
   width: 50px;
   height: 2px;
@@ -565,11 +569,6 @@ max-width: 540px;
   .s-4{
   padding: 40px 0;
   }
-  .subtitle::after{
-  left: 44%;
-  /*right: -57%;*/
-  
-  }
   .expertise-block__direction{
     max-width: 50%;
     border:none;  
@@ -600,11 +599,7 @@ max-width: 540px;
     margin: 20px 0px 15px 0px;
   } 
 }
-@media(max-width: 432px){
-  .subtitle::after{
-  left: 42%;
-  }
-}
+
 
 /*Секция 5*/
 
@@ -629,7 +624,9 @@ max-width: 540px;
   content: "";
   position: absolute;
   bottom: 0;
-  left: 47%;
+  transform-origin: center;
+    left: 50%;
+    transform: translateX(-50%);
   
   width: 50px;
   height: 2px;
@@ -647,13 +644,20 @@ max-width: 540px;
   width: 100%;
   margin: 47px 0px 0px 0px; 
 }
+
 .cards__person {
   box-sizing: border-box;
-  width: 23.405%;
+  width: 220px;
+  
+  margin: 0px 20px 0px 0px;
+}
+
+.cards__person:last-child{
+  margin-right: 0;
 }
 .cards__photo {
-  background: #fff;
-  width: 220px;
+  background: url(../img/png_logos/Placeholder.jpg);
+  max-width: 220px;
   height: 229px;
 }
 .cards__description{
@@ -694,4 +698,47 @@ max-width: 540px;
 .s-5 .btn{
   margin: 0 auto;
   width: 140px;
+}
+
+/*Медиа секция 5*/
+
+@media(max-width: 970px){
+  .cards{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+  }
+  .cards__person{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto 0px auto;
+  }
+  .cards__person:nth-child(3), .cards__person:nth-child(4){
+    margin-top: 30px;
+  }
+  .middle-pos-case{
+    width: 220px;
+    margin: 0 auto;
+  }
+  .s-5__text{
+    margin-top: 35px;
+  }
+}
+
+@media(max-width: 520px){
+  .cards{
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .cards__person{
+    width: 100%;
+  }
+  .cards__person:nth-child(2) {
+    margin-top: 30px;
+  }
+  .cards__description{
+    padding: 13px 0px 20px 0px;
+  }
 }
