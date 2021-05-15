@@ -808,6 +808,7 @@ max-width: 540px;
 .projects__item img{
   width: 100%;
   height: 100%;
+  
 }
 .s-6 .btn{
 margin: 0 auto;
@@ -907,7 +908,7 @@ border-color: #413d4b;
 
 
 .workers__info {
-  margin: 0px 0px 45px 0px;
+  margin: 0px 0px 25px 0px;
 }
 
 
@@ -970,6 +971,50 @@ border-color: #413d4b;
 
   transform: rotate(45deg);
 }
-.workers__row .selected{
+
+.workers__row__worker:nth-of-type(3){
   transform: scale(1);
 }
+
+
+/*Медиа Секция 7*/
+
+@media(max-width: 590px){
+  .s-7{
+    padding:40px 0;
+  }
+  .s-7__text{
+    margin: 20px auto 30px auto;
+  }
+
+
+  .workers__row__worker:nth-last-of-type(1), .workers__row__worker:nth-last-of-type(2){
+    display: none;
+  }
+  .workers__row__worker:nth-of-type(3){
+    transform: scale(0.64);
+  }
+  .workers__row__worker:nth-of-type(2){
+    transform: scale(1);
+  }
+  
+}
+
+@media(max-width: 410px){
+  .s-7__text{
+    margin-bottom: 45px;
+  }
+
+  .workers__row__worker:nth-last-of-type(3), .workers__row__worker:nth-last-of-type(4){
+    display: none;
+  }
+  .workers__row__worker:nth-of-type(2){
+    transform: scale(0.64);
+  }
+  
+  .workers__row__worker:nth-of-type(1){
+    transform: scale(1);
+  }
+}
+  
+
