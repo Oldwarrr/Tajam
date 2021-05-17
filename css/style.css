@@ -1264,6 +1264,10 @@ border-color: #413d4b;
   text-align: center;
   background-color: rgba(255,255,255, 0.5);
 }
+.submit__btn:hover{
+  background-color: rgba(255,255,255, 1);
+  transition: background-color 0.5s;
+}
 .submit__btn img{
   vertical-align: middle;
 }
@@ -1283,11 +1287,18 @@ border-color: #413d4b;
   border-radius: 50%;
   text-align: center;
 }
+.social__item:hover{
+  background-color: #00e0d0;
+  border-color: #00e0d0;
+}
 .social__item:not(:last-of-type){
   margin-right: 9px;
 }
 .social__item img{
-  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  
 }
 
 /*footer*/
@@ -1307,6 +1318,10 @@ border-color: #413d4b;
   letter-spacing: 0.25px;
   line-height: 26px;
   text-transform: uppercase;
+}
+.list__item a:hover{
+  color: #00e0d0;
+  transition: color 0.4s;
 }
 .footer__copyright{
   text-transform: none;
