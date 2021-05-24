@@ -1,3 +1,2 @@
-# Tajam_1
-Новый проект с нуля, без заимствования сторонних структур, js и прочего, лишь трай верстки + тренинг адаптива
-https://oldwarrr.github.io/Tajam_1/
+# Tajam
+https://oldwarrr.github.io/Tajam/
