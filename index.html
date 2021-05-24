@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="s-1">
+		<div class="s-1" id="home">
 
 			<div class="container">
 				<header class="header">
@@ -21,13 +21,13 @@
 					</div>
 					<nav class="menu">
 						<ul class="menu__nav">
-							<li><a href="" class="menu__link">Home</a></li>
-							<li><a href="" class="menu__link">About</a></li>
-							<li><a href="" class="menu__link">Expertise</a></li>
-							<li><a href="" class="menu__link">Teams</a></li>
-							<li><a href="" class="menu__link">Works</a></li>
-							<li><a href="" class="menu__link">People Say</a></li>
-							<li><a href="" class="menu__link">Conctact</a></li>
+							<li><a href="#home" class="menu__link">Home</a></li>
+							<li><a href="#about" class="menu__link">About</a></li>
+							<li><a href="#expertise" class="menu__link">Expertise</a></li>
+							<li><a href="#teams" class="menu__link">Teams</a></li>
+							<li><a href="#works" class="menu__link">Works</a></li>
+							<li><a href="#people-say" class="menu__link">People Say</a></li>
+							<li><a href="#contact" class="menu__link">Conctact</a></li>
 						</ul>
 					</nav>
 					<div class="header__menu">
@@ -62,7 +62,7 @@
 
 		</div> <!-- /s-1 -->
 
-		<div class="s-2">
+		<div class="s-2" id="about">
 			<div class="container">
 				<div class="s-2__content">
 					<img class="logo__main" src="img/png_logos/logo_main.png" alt="">
@@ -88,7 +88,7 @@
 		</div> <!-- /s-3 -->
 
 
-		<div class="s-4">
+		<div class="s-4" id="expertise">
 			<div class="container">
 				<div class="title">Expertise</div>
 				<div class="subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -138,7 +138,7 @@
 		</div>  <!-- /s-4 -->
 
 
-		<div class="s-5">
+		<div class="s-5" id="teams">
 			<div class="container">
 				<div class="title">Meet our amazing team</div>
 				<div class="subtitle">Lorem ipsum dolor sit 
@@ -205,7 +205,7 @@
 			</div> <!-- /container -->
 		</div> <!-- /s-5 -->
 
-		<div class="s-6">
+		<div class="s-6" id="works">
 			<div class="container">
 				<div class="s-6__header">
 					<div class="title">Our works</div>
@@ -233,7 +233,7 @@
 		</div> <!-- /s-6 -->
 
 
-		<div class="s-7">
+		<div class="s-7" id="people-say">
 			<div class="big-title">“</div>
 			<div class="s-7__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</div>
 
@@ -268,11 +268,11 @@
 				<div class="sending-form">
 					<div class="title">Give us a good news</div>
 					
-					<form class="form" action="">
+					<form class="form" method="post">
 						<input type="text" placeholder="Name" name="Name">
 						<input type="email" placeholder="Email" name="Email">
-						<input type="text" placeholder="Subject" name="Massage">
-						<textarea class="form__massage" name="" id="" placeholder="Your Massage"></textarea>
+						<input type="text" placeholder="Subject" name="Subject">
+						<textarea class="form__massage" name="Message" id="" placeholder="Your Message"></textarea>
 					</form>
 
 					<a href="" class="btn">Submit</a>
@@ -303,7 +303,7 @@
 			</div>	<!-- /container -->
 		</div>	<!-- /s-8 -->	
 
-		<div class="s-9">
+		<div class="s-9" id="contact">
 			<div class="container">
 				
 				<div class="s-9__content">
@@ -341,7 +341,7 @@
 					<div class="content__form-and-social">
 						<div class="s-9__title">Stay in touch</div>
 						<div class="form-submit">
-							<input class="submit__input" type="text" placeholder="Subscribe our newsletter">
+							<input class="submit__input" name="submit-input" type="text" placeholder="Subscribe our newsletter">
 							<a class="submit__btn" href=""><img src="img/png_logos/arrow.png" alt=""></a>
 						</div>
 						<div class="social">
