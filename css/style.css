@@ -1202,7 +1202,7 @@ border-color: #413d4b;
 .content__info .logo{
   position: relative;
 }
-.content__info #logo{
+.content__info #logo-footer{
   position: absolute;
   top: -10px;
 }
