@@ -1,7 +1,7 @@
 ## Демопроект по верстке - Tajam
 [oldwarrr.github.io/Tajam](https://oldwarrr.github.io/Tajam/)
 
-__Цель:__ тренировка общих навыков верски и Flexbox  
+__Цель:__ тренировка общих навыков верстки и Flexbox  
 __Макет:__ Tajam  
 Адаптивный +
 
