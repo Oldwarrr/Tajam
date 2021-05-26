@@ -1,3 +1,68 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Black.woff2') format('woff2'),
+        url('PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hammersmith One';
+    src: url('HammersmithOne-Regular.woff2') format('woff2'),
+        url('HammersmithOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Thin.woff2') format('woff2'),
+        url('Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
 @charset "UTF-8";
 /*Обнуление*/
 * {
@@ -141,13 +206,17 @@ body {
   line-height: 50px;
   padding: 15px 0px 0px 0px;
 }
-
+#logo-header{
+  position: absolute;
+}
 
 .logo__label{
+  /*float: right;*/
   font-size: 30px;
   font-weight: 100;
   color: #37acc6;
   margin: 0px 0px 0px 7px;
+  padding-left: 44px;
 }
 
 .menu__nav {
@@ -1343,7 +1412,7 @@ border-color: #413d4b;
     width: 35%;
     max-width: 290px;
   }
-  .s-9 .logo, .s-9__title{
+  .s-9__title{
     text-align: center;
     margin-bottom: 20px;
   }
@@ -1369,6 +1438,21 @@ border-color: #413d4b;
   }
 }
 @media(max-width: 480px){
+  .content__info #logo-footer{
+    position: static;
+   
+  }
+  .content__info .logo__label{
+    padding: 0;
+    float: right;
+    line-height: 50px;
+  }
+  .s-9 .logo{
+    text-align: center;
+    display: block;
+    width: 130px;
+    margin: 0 auto 30px;
+  } 
   .s-9{
     padding-top: 40px;
   }
